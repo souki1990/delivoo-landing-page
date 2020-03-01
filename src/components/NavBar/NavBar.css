@@ -1,0 +1,36 @@
+nav {
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav a {
+  margin: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+a.delivroo {
+  width: 112px;
+  height: 32px;
+  text-indent: -9999px;
+  background-image: url(../../assets/logo-horizontal.svg);
+  display: block;
+}
+
+.user-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  background-image: url(../../assets/user-icon.svg);
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 320px) and (max-width: 640px) {
+  a.user-name span {
+    display: none;
+  }
+}
