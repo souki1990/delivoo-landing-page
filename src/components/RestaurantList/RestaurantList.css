@@ -13,38 +13,17 @@
   font-size: 20px;
 }
 
-.restaurant-list img {
-  width: var(--img-width);
-}
-
 .restaurant-list span {
-  color: var(--main-txt-color);
-}
-
-.restaurant-name {
-  margin-top: 10px;
-  margin-bottom: 5px;
-  overflow-wrap: break-word;
-  font-family: "Stratos semibold";
-  font-size: 22px;
-}
-
-.restaurant-tags {
-  font-size: 14px;
-  display: inline-flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-}
-
-.restaurant-title {
-  padding-top: 29px;
-  padding-bottom: 29px;
   color: var(--main-txt-color);
 }
 
 @media screen and (min-width: 320px) and (max-width: 640px) {
   .restaurant-title {
     display: none;
+  }
+
+  .restaurant-item img {
+    width: 100%;
   }
 
   .restaurant-container {

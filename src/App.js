@@ -1,9 +1,9 @@
-import React from 'react';
-import RestaurantList from './components/RestaurantList/RestaurantList';
+import React from "react";
+import RestaurantList from "./components/RestaurantList/RestaurantList";
 import Location from "./components/Location/Location";
 import NavBar from "./components/NavBar/NavBar";
-import restaurants from './data/restaurants';
-import './App.css';
+import restaurants from "./data/restaurants";
+import "./App.css";
 
 function App() {
   return (

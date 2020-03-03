@@ -1,0 +1,20 @@
+.restaurant-name {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  overflow-wrap: break-word;
+  font-family: "Stratos semibold";
+  font-size: 22px;
+}
+
+.restaurant-tags {
+  font-size: 14px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+
+.restaurant-title {
+  padding-top: 29px;
+  padding-bottom: 29px;
+  color: var(--main-txt-color);
+}
