@@ -1,9 +1,20 @@
+.restaurant-container {
+  display: table;
+  margin: 0 auto;
+}
+
 .restaurant-list span.tag:after {
   content: ".";
   margin-left: 7px;
   margin-right: 7px;
   position: relative;
   bottom: 3px;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.restaurant-list img {
+  width: var(--img-width);
 }
 
 .restaurant-list span {
@@ -14,29 +25,36 @@
   margin-top: 10px;
   margin-bottom: 5px;
   overflow-wrap: break-word;
+  font-family: "Stratos semibold";
+  font-size: 22px;
 }
 
 .restaurant-tags {
   font-size: 14px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: baseline;
 }
 
 .restaurant-title {
-  padding-top: 18px;
-  padding-bottom: 18px;
+  padding-top: 29px;
+  padding-bottom: 29px;
   color: var(--main-txt-color);
 }
 
 @media screen and (min-width: 320px) and (max-width: 640px) {
-  .restaurant-item {
-    /* @Todo maybe put this in a var */
-    padding: 10px;
-  }
   .restaurant-title {
     display: none;
   }
 
-  img {
-    width: 100%;
+  .restaurant-container {
+    display: block;
+    padding-left: var(--padding-mobile);
+    padding-right: var(--padding-mobile);
+  }
+
+  .restaurant-item {
+    padding-top: 24px;
   }
 }
 
@@ -44,40 +62,18 @@
   .restaurant-list {
     display: grid;
     width: 100%;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    grid-template-columns: 340px 340px;
-  }
-  .restaurant-list img {
-    width: 340px;
-  }
-}
-@media screen and (min-width: 1024px) and (max-width: 1280px) {
-  .restaurant-list {
-    display: grid;
-    grid-template-columns: 300px 300px 300px;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-  }
-
-  .restaurant-list img {
-    width: 300px;
+    grid-template-columns: var(--img-width) var(--img-width);
+    grid-column-gap: var(--grid-column-gap);
+    grid-row-gap: var(--grid-row-gap);
   }
 }
 
-@media screen and (min-width: 1280px) {
-  .restaurant-container {
-    display: table;
-    margin: 0 auto;
-  }
-
+@media screen and (min-width: 1024px) {
   .restaurant-list {
     display: grid;
-    grid-template-columns: 360px 360px 360px;
-    grid-column-gap: 60px;
-    grid-row-gap: 20px;
-  }
-  .restaurant-list img {
-    width: 360px;
+    width: 100%;
+    grid-template-columns: var(--img-width) var(--img-width) var(--img-width);
+    grid-column-gap: var(--grid-column-gap);
+    grid-row-gap: var(--grid-row-gap);
   }
 }

@@ -11,10 +11,10 @@ const RestaurantList = (props) => {
                     <div key={restaurant.id} className="restaurant-item">
                         <img src={restaurant.image} alt="" />
                         <div className="restaurant-name">{restaurant.name}</div>
-                        <div className="restaurant-tags">
+                        {restaurant.tags.length > 0 && <div className="restaurant-tags">
                             {restaurant.tags.map((tag, index) => <span className="tag" key={index}>{tag}</span>)}
                             <span>£</span>
-                        </div>
+                        </div>}
                     </div>
 
                 )}

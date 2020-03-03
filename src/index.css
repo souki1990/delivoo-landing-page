@@ -1,6 +1,33 @@
 :root {
   --main-delivroo-green: #00ccbc;
-  --main-txt-color: #979797;
+  --main-txt-color: #828585;
+  --padding-mobile: 16px;
+  --grid-column-gap: 31px;
+  --grid-row-gap: 32px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 640px) {
+  :root {
+    --img-width: 100%;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 1024px) {
+  :root {
+    --img-width: 320px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  :root {
+    --img-width: 300px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  :root {
+    --img-width: 360px;
+  }
 }
 
 body {
