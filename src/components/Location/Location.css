@@ -14,13 +14,12 @@
 }
 
 .location-header button {
-  border-radius: 0px !important;
   color: var(--main-delivroo-green);
   background-color: white;
   font-size: 16px;
   padding: 17px;
   border-color: var(--main-delivroo-green);
-  border-radius: 3px !important;
+  border-radius: 3px;
 }
 
 @media screen and (min-width: 320px) and (max-width: 640px) {
