@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Restaurant.css";
+import ImageSizeContext from "../../context/ImageSizeContext";
 
 const RestaurantItem = (props) => {
     const restaurant = props.restaurant;
-    const { xsWidth, smallWidth, mediumWidth, largeWidth, xsHeight } = props.imageSizes;
+    const { xsWidth, smallWidth, mediumWidth, largeWidth, xsHeight } = useContext(ImageSizeContext);
 
     const getImageURL = (imageUrl, width, height) => {
         let url = new URL(imageUrl);
